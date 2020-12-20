@@ -10,7 +10,7 @@
 <!-- twitter -->
 <meta name="twitter:title" content="The Successor Representation, γ-Models and Infinite-Horizon Prediction">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://people.eecs.berkeley.edu/~janner/gamma-models/blog/figures/twitter-card-0.98-01.png">
+<meta name="twitter:image" content="figures/twitter-card-0.98-01.png">
 
 <!-- mathjax -->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -82,7 +82,7 @@ setInterval(function() {
 
 <br>
 <p style="text-align:center;">
-    <img src="https://people.eecs.berkeley.edu/~janner/gamma-models/blog/figures/gamma-teaser.png" width="100%">
+    <img src="figures/gamma-teaser.png" width="100%">
     <br>
     <i>Standard single-step models have a horizon of one. This post describes a method for training predictive dynamics models in continuous state spaces with an infinite, probabilistic horizon.</i>
 </p>
@@ -115,7 +115,7 @@ setInterval(function() {
 
 <!-- <br>
 <p style="text-align:center;">
-    <img src="https://people.eecs.berkeley.edu/~janner/gamma-models/blog/figures/mb-mf.png" width="40%">
+    <img src="figures/mb-mf.png" width="40%">
     <br>
     <i>We can organize reinforcement learning algorithms in terms of when they deal with long-horizon complexity. Dynamics models train for a short-horizon prediction task but are deployed (at “testing-time”) using long-horizon rollouts. In contrast, value functions amortize the work of long-horizon prediction at training, so a single-step prediction is sufficient during testing.</i>
 </p>
@@ -125,7 +125,7 @@ setInterval(function() {
 <center>
 <div style="width: 90%;">
     <div style="width: 45%; float: left;">
-        <img src="https://people.eecs.berkeley.edu/~janner/gamma-models/blog/figures/mb-mf.png" width="100%">
+        <img src="figures/mb-mf.png" width="100%">
     </div>
     <div style="width: 46%; float: right;">
         <p>
@@ -199,7 +199,7 @@ setInterval(function() {
 </p>
 
 <p style="text-align:center;">
-    <img src="https://people.eecs.berkeley.edu/~janner/gamma-models/blog/figures/tolman.gif" width="60%">
+    <img src="figures/tolman.gif" width="60%">
     <br>
     <i>The successor representation of a(n optimal) rat in a maze<sup id="fnref:maze"><a href="#fn:maze" class="footnote"><font size="-2">3</font></a></sup>, showing the rat’s path with a probabilistic horizon determined by discount factor \(\gamma\).
 </i>
@@ -262,7 +262,7 @@ setInterval(function() {
 
 <br>
 <p style="text-align:center;">
-    <img src="https://people.eecs.berkeley.edu/~janner/gamma-models/blog/figures/gamma-flow-acrobot.png" width="100%">
+    <img src="figures/gamma-flow-acrobot.png" width="100%">
     <br>
     <br>
     <i>Predictions of a \(\gamma\)-model for varying discounts \(\gamma\). The rightmost column shows Monte Carlo estimates of the discounted occupancy corresponding to \(\gamma=0.95\) for reference. The conditioning state is denoted by \(\circ\).
@@ -287,7 +287,7 @@ setInterval(function() {
 </p>
 
 <p style="text-align:center;">
-    <img id="rollout" src="https://people.eecs.berkeley.edu/~janner/gamma-models/blog/figures/rollout_00.png" width="100%">
+    <img id="rollout" src="figures/rollout_00.png" width="100%">
     <br>
     <i>Whereas conventional dynamics models predict a single step into the future, \(\gamma\)-model rollout steps have a negative binomial distribution over time. The first step of a \(\gamma\)-model has a geometric distribution from the special case of \(~\text{NegBinom}(1, p) = \text{Geom}(1-p)\).</i>
 </p>
@@ -301,7 +301,7 @@ setInterval(function() {
 <div>
     <center>
     <video width=80% height=auto autoplay loop playsinline muted>
-      <source src="https://people.eecs.berkeley.edu/~janner/gamma-models/blog/figures/value_estimation.mp4" type="video/mp4">
+      <source src="figures/value_estimation.mp4" type="video/mp4">
     </video>
     </center>
     <br>
@@ -317,7 +317,7 @@ setInterval(function() {
 
 <br>
 <p style="text-align:center;">
-    <img src="https://people.eecs.berkeley.edu/~janner/gamma-models/blog/figures/consolidated.png" width="100%">
+    <img src="figures/consolidated.png" width="100%">
     <br>
     <i>
         \(\gamma\)-MVE features a gradual transition between model-based and model-free value estimation.
